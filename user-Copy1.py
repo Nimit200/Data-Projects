@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle   
 import numpy as np 
+import warnings
+warnings.filterwarnings("ignore", message="missing ScriptRunContext")
+
 import sklearn
 st.set_page_config(page_title="Emergency Response Predictor", layout="wide", page_icon="🚑")
  
