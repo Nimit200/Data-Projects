@@ -4,11 +4,10 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore", message="missing ScriptRunContext")
 
-import sklearn
 st.set_page_config(page_title="Emergency Response Predictor", layout="wide", page_icon="🚑")
  
 
-with open('/workspaces/Data-Projects/model_emergency_one_hot.sav','rb') as file:
+with open('model_emergency_one_hot.sav','rb') as file:
     Emergency =pickle.load(file)
 
 st.title('Predict Emergency Response Time  ')
