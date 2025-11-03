@@ -6,7 +6,7 @@ st.set_page_config(page_title="Emergency Response Predictor", layout="wide", pag
  
 
 
-with open('C:/Users/singh/OneDrive/Documents/Projects/Machine Learning/Emergency Response/model_emergency_one_hot.sav','rb') as file:
+with open('/workspaces/Emergency-Response/model_emergency_one_hot.sav','rb') as file:
     Emergency =pickle.load(file)
 
 st.title('Predict Emergency Response Time  ')
